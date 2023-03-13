@@ -1,17 +1,14 @@
-import { View, Text, StyleSheet, TouchableOpacity } from 'react-native'
+import { ScrollView, View, Text, Button, StyleSheet, TextInput } from 'react-native'
 
 export default function EditTodoScreen() {
   return (
-    <View>
-      <Text
-        style={{
-          fontSize: 30,
-          textAlign: 'center',
-          marginTop: '20%'
-        }}
-      >
-        EditScreen
-      </Text>
-    </View>
+    <ScrollView>
+      <View>
+        <Text> Name todo </Text>
+        <TextInput>
+          <Text>Name Todo</Text>
+        </TextInput>
+      </View>
+    </ScrollView>
   )
 }
